@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Checkbox customizada</h1>
+  <Checkbox v-model="checked" id="checkbox" label="Manter-se conectado"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Checkbox from "./components/Checkbox.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Checkbox,
+  },
+  data() {
+    return {
+      checked: true,
+    };
+  },
+};
 </script>
 
 <style>
